@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 from io import BytesIO
-import matplotlib.pyplot as plt
 
 st.set_page_config(page_title='ML Test Dataset Generator', layout='wide',page_icon=':material/data_object:')
 
