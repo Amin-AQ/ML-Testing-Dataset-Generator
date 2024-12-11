@@ -55,7 +55,7 @@ if training_file:
         with col2:
             st.subheader("Matched Data Distribution")
             matched_distribution = matched_data['gold_label'].value_counts(normalize=True) * 100
-            matched_distribution_formatted = matched_distribution.apply(lambda x: f'{x:.2f}%')
+            matched_distribution_formatted = matched_distribution.sort_index().apply(lambda x: f'{x:.2f}%')
             st.dataframe(matched_distribution_formatted)
 
         # Download link for matched data
