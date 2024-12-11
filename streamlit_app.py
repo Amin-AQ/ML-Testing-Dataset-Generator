@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
-st.set_page_config(page_title='ML Test Dataset Generator', layout='wide',page_icon=':material/data_object:')
+st.set_page_config(page_title='ML Test Dataset Generator', layout='wide',page_icon=':material/description:')
 
 def match_distribution(training_data, testing_data):
     # Compute the desired distribution from the training data
